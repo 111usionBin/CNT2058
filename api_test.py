@@ -13,6 +13,6 @@ if not api_key:
 client = genai.Client(api_key=api_key)
 
 response = client.models.generate_content(
-    model="gemini-3-flash-preview", contents="안녕"
+    model="gemini-3-flash-preview", contents="아까 전에 뭐라고 했어?"
 )
 print(response.text)
